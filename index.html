@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Let's Paint</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Let's paint</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li>
+                <div>
+                    <input type='button' id="rubberButton" class='toolButton' value='Rubber'>
+                    <input type='button' id="fillButton" class='toolButton' value='Fill'>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <input type='button' id="pencilButton" class='toolButton' value='Pencil'>
+                    <input type='button' id="brushButton" class='toolButton' value='Brush'>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <input type='button' id="lineButton" class='toolButton' value='Line'>
+                    <input type='button' id="rectangleButton" class='toolButton' value='Rect.'>
+                </div>
+            </li>
+                <li>
+                    <div>
+                        <input type='button' id="selectButton" class='toolButton' value='Select'>
+                        <input type='button' id="textButton" class='toolButton' value='Text'>
+                    </div>
+                </li>
+            <li>
+                <div>
+                    <input type='button' id="blackButton" class='toolButton' style='background-color:black'></inpur>
+                    <input type='button' id="redButton" class='toolButton' style='background-color:red'>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <input type='button' id="blueButton" class='toolButton' style='background-color:blue'></inpur>
+                    <input type='button' id="whiteButton" class='toolButton' style='background-color:white'>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <input type='button' id="yellowButton" class='toolButton' style='background-color:yellow'></inpur>
+                    <input type='button' id="greenButton" class='toolButton' style='background-color:green'>
+                </div>
+            </li>
+        </ul>
+    </nav>
+  
+  <article>
+            <canvas id='paint' width="256" height="256">
+            <!-- <canvas id='paint' width="256" height="256" onclick="doMagic(event)"></canvas> -->
+    
+  </article>
+</section>
+
+<footer>
+        <canvas id='colorIndicator' width="64" height="64"></canvas>
+    <p id='pointerState'>Footer</p>
+</footer>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
